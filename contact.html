@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijith's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;} */
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+            margin:0 250px 0 250px;
+          border-radius: 5px;
+          background: #1f242d;
+          color: #fff;
+          padding: 20px;
+        }
+        </style>
+        
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:1;">Home</a>
+            <a href="About.html" style="--i:2;">About</a>
+            <a href="skills.html" style="--i:3;" >Skills</a>
+            <a href="contact.html" style="--i:5;" class="active">Contact</a>
+        </nav>
+    </header>
+    <section class="head1">
+        <h1 class="cont">Contact</h1>
+    </section>
+    <div class="container">
+        <form action="thankyou.html">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="India">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
